@@ -1,0 +1,11 @@
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\bin\Debug\GUI Pizza.exe.config
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\bin\Debug\GUI Pizza.exe
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\bin\Debug\GUI Pizza.pdb
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.csprojAssemblyReference.cache
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI_Pizza.Form1.resources
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI_Pizza.Properties.Resources.resources
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.csproj.GenerateResource.cache
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.csproj.CoreCompileInputs.cache
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.exe
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.pdb
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI_Pizza.Form2.resources
