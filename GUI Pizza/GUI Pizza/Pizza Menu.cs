@@ -47,9 +47,33 @@ namespace GUI_Pizza
         public static string toppings;
         private void button1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 4; i++)
+            if (pizzaTopping.Count <= 1)
             {
-                toppings = toppings + " " + pizzaTopping[i];
+                for (int i = 0; i < 1; i++)
+                {
+                    toppings = toppings + " " + pizzaTopping[i];
+                }
+            }
+            if (pizzaTopping.Count == 2)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    toppings = toppings + " " + pizzaTopping[i];
+                }
+            }
+            if (pizzaTopping.Count == 3)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    toppings = toppings + " " + pizzaTopping[i];
+                }
+            }
+            if (pizzaTopping.Count == 4)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    toppings = toppings + " " + pizzaTopping[i];
+                }
             }
             pizza = pizzaSize + " " + pizzaCrust + "crust ";
             labels = price; //To hold price

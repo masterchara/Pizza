@@ -59,15 +59,5 @@ namespace GUI_Pizza.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20200616_170600 {
-            get {
-                object obj = ResourceManager.GetObject("20200616_170600", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
