@@ -38,7 +38,7 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
-                drinkSize = "Small";
+                drinkSize = "24 ounce";
                 price += 2; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -55,7 +55,7 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
-                drinkSize = "Medium";
+                drinkSize = "32 ounce";
                 price += 3; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -72,7 +72,7 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
-                drinkSize = "Large";
+                drinkSize = "40 ounce";
                 price += 4; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -164,6 +164,19 @@ namespace GUI_Pizza
             else
             {
                 drinkType = "";
+            }
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton box = (RadioButton)sender;
+            if (box.Checked) //if user checks box
+            {
+                drinkSize = "None";
+            }
+            else
+            {
+                drinkSize = "";
             }
         }
     }
