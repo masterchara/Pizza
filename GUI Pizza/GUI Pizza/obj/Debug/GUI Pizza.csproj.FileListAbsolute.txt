@@ -9,3 +9,4 @@ C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.csproj.CoreC
 C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.exe
 C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI Pizza.pdb
 C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI_Pizza.Form2.resources
+C:\Users\buifr\source\repos\GUI Pizza\GUI Pizza\obj\Debug\GUI_Pizza.Order.resources

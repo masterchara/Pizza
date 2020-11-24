@@ -22,7 +22,7 @@ namespace GUI_Pizza
             Form1 f1 = new Form1(); ///1st page variable
             f1.ShowDialog(); ///switches to the first page 
         }
-        private int price; //price total variable
+        public static int price; //price total variable
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -32,17 +32,19 @@ namespace GUI_Pizza
         {
 
         }
-
+        private string drinkSize;
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
+                drinkSize = "Small";
                 price += 2; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
             else
             {
+                drinkSize = "";
                 price -= 2; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -53,11 +55,13 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
+                drinkSize = "Medium";
                 price += 3; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
             else
             {
+                drinkSize = "";
                 price -= 3; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -68,11 +72,13 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
+                drinkSize = "Large";
                 price += 4; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
             else
             {
+                drinkSize = "";
                 price -= 4; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -83,11 +89,13 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
+                drinkType = "Gatorade";
                 price += 1; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
             else
             {
+                drinkType = "";
                 price -= 1; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
@@ -98,13 +106,64 @@ namespace GUI_Pizza
             RadioButton box = (RadioButton)sender;
             if (box.Checked) //if user checks box
             {
+                drinkType = "Sweet Tea";
                 price += 1; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
             }
             else
             {
+                drinkType = "";
                 price -= 1; //changes to price and label due to pizza size cost
                 label2.Text = "Price: $" + price;
+            }
+        }
+        public static int labels;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            labels = price;
+            drink = drinkSize + " " + drinkType;
+            this.Hide();
+            Order o1 = new Order();
+            o1.ShowDialog();
+        }
+        private string drinkType; //holds variable type of drink
+        public static string drink; //type of drink for the order portion
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton box = (RadioButton)sender;
+            if (box.Checked) //if user checks box
+            {
+                drinkType = "Coke";
+            }
+            else
+            {
+                drinkType = "";
+            }
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton box = (RadioButton)sender;
+            if (box.Checked) //if user checks box
+            {
+                drinkType = "Sprite";
+            }
+            else
+            {
+                drinkType = "";
+            }
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton box = (RadioButton)sender;
+            if (box.Checked) //if user checks box
+            {
+                drinkType = "Water";
+            }
+            else
+            {
+                drinkType = "";
             }
         }
     }
