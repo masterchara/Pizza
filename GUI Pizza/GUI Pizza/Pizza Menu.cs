@@ -47,7 +47,7 @@ namespace GUI_Pizza
         public static string toppings;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (pizzaTopping.Count <= 1)
+            if (pizzaTopping.Count == 1)
             {
                 for (int i = 0; i < 1; i++)
                 {
